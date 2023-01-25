@@ -7,100 +7,83 @@
     src: url("Poppins/Poppins-Bold.ttf");
     font-weight: bold;
 }
+* {
+    font-family: Poppins;
+    font-size: 16px;
+    color: white;
+}
 
 html {
     background: hsl(0, 100%, 74%) url("../images/bg-intro-desktop.png") no-repeat fixed center center;
-    height: fit-content;
+    min-height: 100%;
+    display:table;
+}
+
+.vertical-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+body {
+    background-color: transparent;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+}
+
+.tbl {
+    display: table;
 }
 
 @media (max-width: 575px) {
-    html
-    {
-        background: hsl(0, 100%, 74%) url("../images/bg-intro-mobile.png") no-repeat fixed center center;
+    .left-col {
         text-align: center;
     }
-    .right-col{
-        margin: auto;
-    }
-    .left-col{
-        margin: auto;
-    }
 }
-
-
-
-body {
-    font-family: Poppins;
-    color: white;
-    background-color: transparent;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 16px;
-}
-
-h1 {
-    font-weight: bold;
-    font-size: 48px;
-}
-
-body div {
-    display: inline;
-    margin: 0 auto;
-}
-
-.left-col{
-    margin-left: 10%;
-    margin-right: 1%;
-    font-size: 16px;
-}
-.right-col{
-    margin-left: 1%;
-    margin-right: 10%;
-}
-
-
-
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
 
 .try {
-    display: block;
-    text-align: center;
     background-color: hsl(248, 32%, 49%);
-    padding: 20px 0px;
     border-radius: 10px;
-    box-shadow: 0px 8px hsl(249, 10%, 26%, 50%);
-    margin: 15px 0px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: hsl(249, 10%, 26%, 40%) 0px 8px;
+    margin: 20px 0px;
 }
 
 .form-stuff {
-    display: block;
     background-color: white;
-    text-align: left;
+    padding: 20px 30px;
     border-radius: 10px;
-    padding: 20px 40px;
+    margin: 20px 0px;
 }
 
-.form-floating {
-    display: block;
-
-}
-
-.form-floating label {
-    color: gray;
+.form-stuff div *{
+    color: grey;
 }
 
 .form-stuff p {
-    color: gray;
+    padding: 5px;
+    color: grey;
+    font-size: 12px;
 }
 
-.btn-primary {
-    background-color: hsl(154, 59%, 51%);
+a {
+    color: hsl(248, 32%, 49%);
+}
+
+h1 {
+    font-size: 48px;
 }
 
 .claimbtn {
-    display: block;
     width: 100%;
-    padding: 10px 20px;
+    background-color: hsl(154, 59%, 51%);
+    box-shadow: hsl(154, 59%, 51%, 50%) 0px 3px;
+    padding: 10px;
 }
+
